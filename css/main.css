@@ -18,7 +18,8 @@ img{
 	position: absolute;
    	width: 100%;
    	height: 100vh;
-	background: url(../images/background.jpg) no-repeat center;
+	/*background: rgb(148,151,165);*/
+	background: url(../images/background.gif) no-repeat center;
 	background-size: cover;
 	display: block;
 
@@ -28,8 +29,9 @@ img{
 	display: block;
 	margin: 0 auto;
 	width: 700px;
-	outline: 5px solid #FBB514;
-	border-radius: 5px;
+	padding-top: 10px;
+/*	outline: 10px solid #8560A3;*/
+/*	background-color: #8560A3;*/
 }
 
 .title h2
@@ -38,7 +40,7 @@ img{
 	padding: 10px;
 	font-size: 28px;
 	font-weight: 700;
-	color: #FBB514;
+	color: #8560A3;
 	text-align: center;
 	line-height: 50px;
 	background-color: transparent;
@@ -49,8 +51,6 @@ img{
 	display: flex;
 	flex-direction: row;
 	margin-top: 20px;
-	flex-wrap: wrap;
-	align-items: center;
 	text-align: center;
 }
 
@@ -63,26 +63,30 @@ img{
 
 .type h3
 {
-	font-size: 20px;
+	margin-top: 40px;
+	font-size: 30px;
 	font-weight: 700;
 	line-height: 22px;
+	color: #fff;
 }
 .type h3:hover
 {
-	color: #E29A13;
+	color: #8560A3;
 }
 
-.hand
+.illust
 {
 	width: 300px;
-	margin: 0 auto;
-
+	margin-left: 20%;
 }
 
-.hand img
+.illust img
 {
 	width: 380px;
+	clip-path: circle(50% at 50% 50%);
+	box-shadow: inset 5px 5px 10px 4px rgba(0,0,0,0.5);
 }
+
 
 #page {
    width: 100%;
@@ -100,7 +104,7 @@ img{
 {
 	width: 50%;
 	position: absolute;
-	background-color: #EDD9AC;
+	background-color: #8560A3;
 	outline: 5px solid #fff;
 	border-radius: 5px;
 	top: 50%;
@@ -121,7 +125,7 @@ img{
 {
 	font-size: 18px;
 	text-align: center;
-	color: #E29A13;
+	color: #8560A3;
 	font-weight: 700;
 	margin-top: 20px;
 }
@@ -136,10 +140,11 @@ img{
 
 .upperCon{
    width: 50%;
-   background-color: #EDD9AC;
+   background-color: #8560A3;
    position: absolute;
-   top: 30%;
-   left: 30%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   left: 50%;
    padding: 10px;
 }
 
@@ -153,7 +158,7 @@ img{
 .work_layer h2 {
    font-size: 23px;
 	text-align: center;
-	color: #E29A13;
+	color: #D7C6E2;
 	font-weight: 700;
 	margin-top: 20px;
 }
@@ -163,6 +168,7 @@ img{
 	font-weight: 20px;
 	margin-top: 20px;
 	line-height: 26px;
+	color: #fff;
 }
 
 .close
